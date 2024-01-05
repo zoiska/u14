@@ -3,11 +3,10 @@ project(u14)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(u14 main.cpp
-        Punkt.cpp
-        Line.cpp
-        Line.h
-        Kreis.cpp
-        Kreis.h
-        Farbe.cpp
-        Farbe.h)
+add_executable(u14 "Geometrische Objekte/main.cpp"
+        "Geometrische Objekte/Punkt.cpp"
+        "Geometrische Objekte/Line.cpp"
+        "Geometrische Objekte/Line.h"
+        "Geometrische Objekte/Kreis.cpp"
+        "Geometrische Objekte/Kreis.h"
+)

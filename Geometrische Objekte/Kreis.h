@@ -6,17 +6,16 @@
 #define KREIS_H
 
 #include "Punkt.h"
-#include "Farbe.h"
 
 class Kreis{
 private:
     Punkt *mittelpunkt;
     double radius;
-    Farbe f;
+    std::string f;
 public:
-    Kreis(int x, int y, double r, Farbe f);
+    Kreis(int x, int y, double r, std::string f);
     Punkt get_mittelpunkt();
-    Farbe get_Farbe();
+    std::string get_Farbe();
     void wachse(double r);
     void bewege(int x, int y);
     bool im_Kreis(Punkt punkt);

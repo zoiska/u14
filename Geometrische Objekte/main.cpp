@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Line.h"
 #include "Punkt.h"
+#include "Kreis.h"
 
 int main() {
     Line linie1(0, 0, 2, 1);
@@ -17,7 +18,13 @@ int main() {
     linie1.drucke();
 
     Line linie3(0, 0, 0, 0);
-    linie3 = linie2;
-    linie3.drucke();
+    linie2 = linie2;
+    linie2.drucke();
+
+    std::cout << linie2.toString() << std::endl;
+
+
+    Kreis kreis1(0, 0, 2, "rot");
+
     return 0;
 }

@@ -23,7 +23,7 @@
         double steigung();
         void translate(double move_x, double move_y);
         std::string toString();
-        const Line& operator=(Line other);
+        const Line& operator=(Line &other);
         void drucke();
     };
 

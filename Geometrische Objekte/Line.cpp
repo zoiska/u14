@@ -56,14 +56,17 @@ void Line::translate(double move_x, double move_y) {
 }
 
 std::string Line::toString() {
-    return std::string();
+    return "Linie von " + p1->getCoords() + " bis " + p2->getCoords();
 }
 
-const Line& Line::operator=(Line other){
-    delete p1;
-    delete p2;
-    this->p1 = new Punkt(other.get_x1(), other.get_y1());
-    this->p2 = new Punkt(other.get_x2(), other.get_y2());
+const Line& Line::operator=(Line &other){
+    if(this != &other) {
+        delete p1;
+        delete p2;
+        this->p1 = new Punkt(other.get_x1(), other.get_y1());
+        this->p2 = new Punkt(other.get_x2(), other.get_y2());
+        return *this;
+    }
     return *this;
 }
 

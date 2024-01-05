@@ -4,7 +4,7 @@
 
 #include "Kreis.h"
 
-Kreis::Kreis(int x, int y, double r, Farbe f) {
+Kreis::Kreis(int x, int y, double r, std::string f) {
     this->mittelpunkt = new Punkt(x, y);
     this->radius = r;
     this->f = f;
@@ -14,8 +14,8 @@ Punkt Kreis::get_mittelpunkt() {
     return *mittelpunkt;
 }
 
-Farbe Kreis::get_Farbe() {
-    return Farbe();
+std::string Kreis::get_Farbe() {
+    return f;
 }
 
 void Kreis::wachse(double r) {
