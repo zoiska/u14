@@ -9,22 +9,18 @@
 #include <sstream>
 #include <cmath>
 
-namespace pnkt {
-
-    class Punkt {
-    private:
-        int x;
-        int y;
-    public:
-        Punkt(int x, int y);
-        void translate(int x, int y);
-        void drucke();
-        std::string getCoords();
-        int get_x();
-        int get_y();
-        int abstand(Punkt pnkt2);
-    };
-
-}
+class Punkt {
+private:
+    double x;
+    double y;
+public:
+    Punkt(double x, double y);
+    void translate(double x, double y);
+    void drucke();
+    std::string getCoords();
+    double get_x();
+    double get_y();
+    double abstand(Punkt pnkt2);
+};
 
 #endif //PUNKT_H

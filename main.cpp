@@ -1,16 +1,23 @@
 #include <iostream>
-#include "line.h"
+#include "Line.h"
 #include "Punkt.h"
 
 int main() {
-    pnkt::Punkt punkt1(5, 6);
-    pnkt::Punkt punkt2(2, 5);
+    Line linie1(0, 0, 2, 1);
+    linie1.drucke();
 
-    punkt1.drucke();
-    punkt2.drucke();
+    Line linie2(linie1);
 
-    line::line linie(&punkt1, &punkt2);
+    linie2.drucke();
+    std::cout << linie2.laenge() << std::endl;
 
-    std::cout << linie << std::endl;
+    std::cout << linie2.steigung() << std::endl;
+
+    linie1.translate(1, 1);
+    linie1.drucke();
+
+    Line linie3(0, 0, 0, 0);
+    linie3 = linie2;
+    linie3.drucke();
     return 0;
 }
