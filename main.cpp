@@ -1,7 +1,7 @@
 #include <iostream>
-#include "Line.h"
-#include "Punkt.h"
-#include "Kreis.h"
+#include "Geometrische Objekte/Line.h"
+#include "Geometrische Objekte/Punkt.h"
+#include "Geometrische Objekte/Kreis.h"
 
 int main() {
     Line linie1(0, 0, 2, 1);

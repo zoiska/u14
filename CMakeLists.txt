@@ -3,7 +3,7 @@ project(u14)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(u14 "Geometrische Objekte/main.cpp"
+add_executable(u14 "main.cpp"
         "Geometrische Objekte/Punkt.cpp"
         "Geometrische Objekte/Line.cpp"
         "Geometrische Objekte/Line.h"
